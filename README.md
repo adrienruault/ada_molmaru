@@ -5,3 +5,7 @@ Group members:
 - Guillaume Mollard
 - Hadrien Marcellin
 - Adrien Ruault
+
+
+Run Homework 1.ipynb
+
