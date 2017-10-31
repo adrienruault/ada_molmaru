@@ -17,9 +17,6 @@ This project aims to compile the information provided by the Panama papers to sh
 
 # Dataset
 
-
-
-
 The dataset is taken from https://www.occrp.org/en/panamapapers/database and it contains five csv files that are described below: 
 - Entities.csv, Officers.csv, Intermediaries.csv are dedicated to the three types of actors encountered in the database. Entities refer to asset providers and officers to financial actors (company, private client, ...). Intermediaries refer to actors putting clients and financial service providers in contact.
 - Addresses.csv describe all the addresses contained in the database those addresses are linked to officers.
@@ -30,6 +27,17 @@ Note that the dataset is also provided under the neo4j format.
 
 
 # A list of internal milestones up until project milestone 2
+
+- **Simple queries**: Implement simple requests on the dataset. e.g. import information by country or by entering a name, or a substring of a name.
+2. **Map pointers**: Connect the simple queries to a GUI interface showing the world map. By entering the name of a person, its country would get pointed on the map.
+3. **Density map**: Generate a density map, which can show the level of offshore activities for countries or regions.
+4. Implement queries that show the relationships between the queried actor and the other actors of the database (entity, officer, intermediary). The query should specify the nature of the relationships (shareholder of, beneficiary of, intermediary of).
+5. Show the relationship queries on the GUI map. A color code and a clean visualization should allow good understanding of the relationships the queried actor is involved in.
+
+
+
+
+
 
 
 
