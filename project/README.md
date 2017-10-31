@@ -32,12 +32,12 @@ Note that the dataset is also provided under the neo4j format.
 2. **Map pointers**: Connect the simple queries of items to a GUI interface showing the world map. By querying an item, its country would get pointed on the map. The pointer will be colored according to the item type.
 3. **Macroscopic queries**: implementation of queries about macroscopic information of the dataset. The queries should ouput information about the level of offshore activities in a country or region
 4. **Density map**: create an interactive density map, which can show the level of offshore activities in countries or regions.
-5. **Connection query**: implementation of queries that show the relationships between the queried actor and the other actors of the database (entity, officer, intermediary). The query should specify the nature of the relationships (shareholder of, beneficiary of, intermediary of).
+5. **Connection queries**: implementation of queries that show the relationships between the queried actor and the other actors of the database (entity, officer, intermediary). The query should specify the nature of the relationships (shareholder of, beneficiary of, intermediary of).
 6. **Connection map**: Integrate the relationship queries in the interactive map the queried actor's relationship are geographically visualizable. A color code should allow good understanding of relationship types.
 7. **Macroscopic connections**: implementation of queries able to show the breadth of the connections between countries and tax heavens. 
 8. **Map finalization**: integration of the macroscopic connections in the interactive map.
  
-
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
 
 Add here a sketch of your planning for the next project milestone.
 
