@@ -28,17 +28,15 @@ Note that the dataset is also provided under the neo4j format.
 
 # A list of internal milestones up until project milestone 2
 
-- **Simple queries**: Implement simple requests on the dataset. e.g. import information by country or by entering a name, or a substring of a name.
-2. **Map pointers**: Connect the simple queries to a GUI interface showing the world map. By entering the name of a person, its country would get pointed on the map.
-3. **Density map**: Generate a density map, which can show the level of offshore activities for countries or regions.
-4. Implement queries that show the relationships between the queried actor and the other actors of the database (entity, officer, intermediary). The query should specify the nature of the relationships (shareholder of, beneficiary of, intermediary of).
-5. Show the relationship queries on the GUI map. A color code and a clean visualization should allow good understanding of the relationships the queried actor is involved in.
-
-
-
-
-
-
+1. **Simple queries**: implementation of simple requests on the dataset's items. e.g. return an actor or a group of actors by querying a name or part of a name. The query will be completed by applying filters on the actor type (entity, officer or intermediary) and on the actor's country.
+2. **Map pointers**: Connect the simple queries of items to a GUI interface showing the world map. By querying an item, its country would get pointed on the map. The pointer will be colored according to the item type.
+3. **Macroscopic queries**: implementation of queries about macroscopic information of the dataset. The queries should ouput information about the level of offshore activities in a country or region
+4. **Density map**: create an interactive density map, which can show the level of offshore activities in countries or regions.
+5. **Connection query**: implementation of queries that show the relationships between the queried actor and the other actors of the database (entity, officer, intermediary). The query should specify the nature of the relationships (shareholder of, beneficiary of, intermediary of).
+6. **Connection map**: Integrate the relationship queries in the interactive map the queried actor's relationship are geographically visualizable. A color code should allow good understanding of relationship types.
+7. **Macroscopic connections**: implementation of queries able to show the breadth of the connections between countries and tax heavens. 
+8. **Map finalization**: integration of the macroscopic connections in the interactive map.
+ 
 
 
 Add here a sketch of your planning for the next project milestone.
