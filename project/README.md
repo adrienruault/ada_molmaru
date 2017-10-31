@@ -37,7 +37,7 @@ Note that the dataset is also provided under the neo4j format.
 7. **Macroscopic connections**: implementation of queries able to show the breadth of the connections between countries and tax heavens. 
 8. **Map finalization**: integration of the macroscopic connections in the interactive map.
  
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](./res/gantt_chart.png?raw=true "Gantt chart")
 
 Add here a sketch of your planning for the next project milestone.
 
