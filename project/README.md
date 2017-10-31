@@ -16,11 +16,29 @@ This project aims to compile the information provided by the Panama papers to sh
 
 
 # Dataset
-The dataset is taken from is given in .csv format and neo4j display format. On one hand,  we might use the csv database to build our work. This data base is composed of four files listing each entities, officers, connections, adresses and intermediaries for a total weight of 352 Mo. On the other hand, neo4j display app offers a good way to explore the data and might be of good help to verify our analysis, we will have to  get familiar with neo4j app since it allowes very fast computation times.
 
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
+The dataset is taken from https://www.occrp.org/en/panamapapers/database and it contains five csv files that are described below: 
+- Entities.csv, Officers.csv, Intermediaries.csv are dedicated to the three types of actors encountered in the database. Entities refer to asset providers and officers to financial actors (company, private client, ...). Intermediaries refer to actors putting clients and financial service providers in contact.
+- Addresses.csv describe all the addresses contained in the database those addresses are linked to officers.
+- all_edges.csv describe the relationships between the items of the database described before, that are entities, officers, intermediaries and addresses. Four different kinds of relationships are described in this dataset: 'registered address', 'shareholder of', 'beneficiary of' and 'intermediary of'.
+
+Note that the dataset is also provided under the neo4j format.
+
+
 
 # A list of internal milestones up until project milestone 2
+
+1. **Simple queries**: implementation of simple requests on the dataset's items. e.g. return an actor or a group of actors by querying a name or part of a name. The query will be completed by applying filters on the actor type (entity, officer or intermediary) and on the actor's country.
+2. **Map pointers**: Connect the simple queries of items to a GUI interface showing the world map. By querying an item, its country would get pointed on the map. The pointer will be colored according to the item type.
+3. **Macroscopic queries**: implementation of queries about macroscopic information of the dataset. The queries should ouput information about the level of offshore activities in a country or region
+4. **Density map**: create an interactive density map, which can show the level of offshore activities in countries or regions.
+5. **Connection query**: implementation of queries that show the relationships between the queried actor and the other actors of the database (entity, officer, intermediary). The query should specify the nature of the relationships (shareholder of, beneficiary of, intermediary of).
+6. **Connection map**: Integrate the relationship queries in the interactive map the queried actor's relationship are geographically visualizable. A color code should allow good understanding of relationship types.
+7. **Macroscopic connections**: implementation of queries able to show the breadth of the connections between countries and tax heavens. 
+8. **Map finalization**: integration of the macroscopic connections in the interactive map.
+ 
+
+
 Add here a sketch of your planning for the next project milestone.
 
 # Questions for TAa
