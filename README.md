@@ -6,6 +6,3 @@ Group members:
 - Hadrien Marcellin
 - Adrien Ruault
 
-
-Run Homework 1.ipynb
-
