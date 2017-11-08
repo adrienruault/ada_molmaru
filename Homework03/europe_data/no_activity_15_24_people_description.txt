@@ -1,0 +1,4 @@
+The indicator on young people neither in employment nor in education and training (NEET) provides information on young people aged 15 to 24 who meet the following two conditions: 
+(a) they are not employed (i.e. unemployed or inactive according to the International Labour Organisation definition) and 
+(b) they have not received any education or training in the four weeks preceding the survey. Data are expressed as a percentage of the total population in the same age group and sex, excluding the respondents who have not answered the question 'participation to education and training'. 
+Data come from the European Union Labour Force Survey.

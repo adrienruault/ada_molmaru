@@ -1,0 +1,5 @@
+Unemployment rate represents unemployed persons as a percentage of the labour force. The labour force is the total number of people employed and unemployed. Unemployed persons comprise persons aged 15 to 74 who were: 
+a. without work during the reference week,
+b. currently available for work, i.e. were available for paid employment or self-employment before the end of the two weeks following the reference week, 
+c. actively seeking work, i.e. had taken specific steps in the four weeks period ending with the reference week to seek paid employment or self-employment or who found a job to start later, i.e. within a period of, at most, three months.
+The indicator is based on the EU Labour Force Survey.
