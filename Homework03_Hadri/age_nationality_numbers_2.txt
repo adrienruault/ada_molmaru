@@ -1,0 +1,237 @@
+﻿Canton,Nationalité,Classes d'âge 15-24 25-49 50 ans et plus,,Mois,Septembre 2017
+,,,,Mesures,Chômeurs inscrits
+Zurich,Etrangers,1,15-24 ans,,1'015
+Zurich,Etrangers,2,25-49 ans,,8'846
+Zurich,Etrangers,3,50 ans et plus,,2'250
+Zurich,Etrangers,Total,,,12'111
+Zurich,Suisses,1,15-24 ans,,2'405
+Zurich,Suisses,2,25-49 ans,,8'207
+Zurich,Suisses,3,50 ans et plus,,4'502
+Zurich,Suisses,Total,,,15'114
+Zurich,Total,,,,27'225
+Berne,Etrangers,1,15-24 ans,,597
+Berne,Etrangers,2,25-49 ans,,3'316
+Berne,Etrangers,3,50 ans et plus,,987
+Berne,Etrangers,Total,,,4'900
+Berne,Suisses,1,15-24 ans,,1'406
+Berne,Suisses,2,25-49 ans,,4'457
+Berne,Suisses,3,50 ans et plus,,2'895
+Berne,Suisses,Total,,,8'758
+Berne,Total,,,,13'658
+Lucerne,Etrangers,1,15-24 ans,,217
+Lucerne,Etrangers,2,25-49 ans,,1'053
+Lucerne,Etrangers,3,50 ans et plus,,323
+Lucerne,Etrangers,Total,,,1'593
+Lucerne,Suisses,1,15-24 ans,,447
+Lucerne,Suisses,2,25-49 ans,,1'106
+Lucerne,Suisses,3,50 ans et plus,,739
+Lucerne,Suisses,Total,,,2'292
+Lucerne,Total,,,,3'885
+Uri,Etrangers,1,15-24 ans,,6
+Uri,Etrangers,2,25-49 ans,,29
+Uri,Etrangers,3,50 ans et plus,,18
+Uri,Etrangers,Total,,,53
+Uri,Suisses,1,15-24 ans,,9
+Uri,Suisses,2,25-49 ans,,29
+Uri,Suisses,3,50 ans et plus,,21
+Uri,Suisses,Total,,,59
+Uri,Total,,,,112
+Schwyz,Etrangers,1,15-24 ans,,67
+Schwyz,Etrangers,2,25-49 ans,,379
+Schwyz,Etrangers,3,50 ans et plus,,171
+Schwyz,Etrangers,Total,,,617
+Schwyz,Suisses,1,15-24 ans,,118
+Schwyz,Suisses,2,25-49 ans,,380
+Schwyz,Suisses,3,50 ans et plus,,340
+Schwyz,Suisses,Total,,,838
+Schwyz,Total,,,,1'455
+Obwald,Etrangers,1,15-24 ans,,4
+Obwald,Etrangers,2,25-49 ans,,47
+Obwald,Etrangers,3,50 ans et plus,,17
+Obwald,Etrangers,Total,,,68
+Obwald,Suisses,1,15-24 ans,,17
+Obwald,Suisses,2,25-49 ans,,31
+Obwald,Suisses,3,50 ans et plus,,37
+Obwald,Suisses,Total,,,85
+Obwald,Total,,,,153
+Nidwald,Etrangers,1,15-24 ans,,13
+Nidwald,Etrangers,2,25-49 ans,,60
+Nidwald,Etrangers,3,50 ans et plus,,21
+Nidwald,Etrangers,Total,,,94
+Nidwald,Suisses,1,15-24 ans,,18
+Nidwald,Suisses,2,25-49 ans,,63
+Nidwald,Suisses,3,50 ans et plus,,73
+Nidwald,Suisses,Total,,,154
+Nidwald,Total,,,,248
+Glaris,Etrangers,1,15-24 ans,,21
+Glaris,Etrangers,2,25-49 ans,,107
+Glaris,Etrangers,3,50 ans et plus,,56
+Glaris,Etrangers,Total,,,184
+Glaris,Suisses,1,15-24 ans,,39
+Glaris,Suisses,2,25-49 ans,,104
+Glaris,Suisses,3,50 ans et plus,,89
+Glaris,Suisses,Total,,,232
+Glaris,Total,,,,416
+Zoug,Etrangers,1,15-24 ans,,41
+Zoug,Etrangers,2,25-49 ans,,497
+Zoug,Etrangers,3,50 ans et plus,,179
+Zoug,Etrangers,Total,,,717
+Zoug,Suisses,1,15-24 ans,,92
+Zoug,Suisses,2,25-49 ans,,438
+Zoug,Suisses,3,50 ans et plus,,296
+Zoug,Suisses,Total,,,826
+Zoug,Total,,,,1'543
+Fribourg,Etrangers,1,15-24 ans,,269
+Fribourg,Etrangers,2,25-49 ans,,1'252
+Fribourg,Etrangers,3,50 ans et plus,,367
+Fribourg,Etrangers,Total,,,1'888
+Fribourg,Suisses,1,15-24 ans,,414
+Fribourg,Suisses,2,25-49 ans,,1'376
+Fribourg,Suisses,3,50 ans et plus,,788
+Fribourg,Suisses,Total,,,2'578
+Fribourg,Total,,,,4'466
+Soleure,Etrangers,1,15-24 ans,,218
+Soleure,Etrangers,2,25-49 ans,,930
+Soleure,Etrangers,3,50 ans et plus,,421
+Soleure,Etrangers,Total,,,1'569
+Soleure,Suisses,1,15-24 ans,,366
+Soleure,Suisses,2,25-49 ans,,1'061
+Soleure,Suisses,3,50 ans et plus,,805
+Soleure,Suisses,Total,,,2'232
+Soleure,Total,,,,3'801
+Bâle-Ville,Etrangers,1,15-24 ans,,145
+Bâle-Ville,Etrangers,2,25-49 ans,,1'305
+Bâle-Ville,Etrangers,3,50 ans et plus,,330
+Bâle-Ville,Etrangers,Total,,,1'780
+Bâle-Ville,Suisses,1,15-24 ans,,263
+Bâle-Ville,Suisses,2,25-49 ans,,957
+Bâle-Ville,Suisses,3,50 ans et plus,,455
+Bâle-Ville,Suisses,Total,,,1'675
+Bâle-Ville,Total,,,,3'455
+Bâle-Campagne,Etrangers,1,15-24 ans,,165
+Bâle-Campagne,Etrangers,2,25-49 ans,,1'089
+Bâle-Campagne,Etrangers,3,50 ans et plus,,342
+Bâle-Campagne,Etrangers,Total,,,1'596
+Bâle-Campagne,Suisses,1,15-24 ans,,359
+Bâle-Campagne,Suisses,2,25-49 ans,,1'270
+Bâle-Campagne,Suisses,3,50 ans et plus,,857
+Bâle-Campagne,Suisses,Total,,,2'486
+Bâle-Campagne,Total,,,,4'082
+Schaffhouse,Etrangers,1,15-24 ans,,82
+Schaffhouse,Etrangers,2,25-49 ans,,381
+Schaffhouse,Etrangers,3,50 ans et plus,,132
+Schaffhouse,Etrangers,Total,,,595
+Schaffhouse,Suisses,1,15-24 ans,,144
+Schaffhouse,Suisses,2,25-49 ans,,341
+Schaffhouse,Suisses,3,50 ans et plus,,206
+Schaffhouse,Suisses,Total,,,691
+Schaffhouse,Total,,,,1'286
+Appenzell Rhodes-Extérieures,Etrangers,1,15-24 ans,,21
+Appenzell Rhodes-Extérieures,Etrangers,2,25-49 ans,,108
+Appenzell Rhodes-Extérieures,Etrangers,3,50 ans et plus,,50
+Appenzell Rhodes-Extérieures,Etrangers,Total,,,179
+Appenzell Rhodes-Extérieures,Suisses,1,15-24 ans,,44
+Appenzell Rhodes-Extérieures,Suisses,2,25-49 ans,,151
+Appenzell Rhodes-Extérieures,Suisses,3,50 ans et plus,,149
+Appenzell Rhodes-Extérieures,Suisses,Total,,,344
+Appenzell Rhodes-Extérieures,Total,,,,523
+Appenzell Rhodes-Intérieures,Etrangers,1,15-24 ans,,6
+Appenzell Rhodes-Intérieures,Etrangers,2,25-49 ans,,10
+Appenzell Rhodes-Intérieures,Etrangers,3,50 ans et plus,,7
+Appenzell Rhodes-Intérieures,Etrangers,Total,,,23
+Appenzell Rhodes-Intérieures,Suisses,1,15-24 ans,,10
+Appenzell Rhodes-Intérieures,Suisses,2,25-49 ans,,14
+Appenzell Rhodes-Intérieures,Suisses,3,50 ans et plus,,15
+Appenzell Rhodes-Intérieures,Suisses,Total,,,39
+Appenzell Rhodes-Intérieures,Total,,,,62
+St-Gall,Etrangers,1,15-24 ans,,408
+St-Gall,Etrangers,2,25-49 ans,,1'844
+St-Gall,Etrangers,3,50 ans et plus,,650
+St-Gall,Etrangers,Total,,,2'902
+St-Gall,Suisses,1,15-24 ans,,638
+St-Gall,Suisses,2,25-49 ans,,1'550
+St-Gall,Suisses,3,50 ans et plus,,1'037
+St-Gall,Suisses,Total,,,3'225
+St-Gall,Total,,,,6'127
+Grisons,Etrangers,1,15-24 ans,,53
+Grisons,Etrangers,2,25-49 ans,,336
+Grisons,Etrangers,3,50 ans et plus,,138
+Grisons,Etrangers,Total,,,527
+Grisons,Suisses,1,15-24 ans,,141
+Grisons,Suisses,2,25-49 ans,,277
+Grisons,Suisses,3,50 ans et plus,,221
+Grisons,Suisses,Total,,,639
+Grisons,Total,,,,1'166
+Argovie,Etrangers,1,15-24 ans,,597
+Argovie,Etrangers,2,25-49 ans,,3'270
+Argovie,Etrangers,3,50 ans et plus,,1'105
+Argovie,Etrangers,Total,,,4'972
+Argovie,Suisses,1,15-24 ans,,958
+Argovie,Suisses,2,25-49 ans,,2'792
+Argovie,Suisses,3,50 ans et plus,,1'962
+Argovie,Suisses,Total,,,5'712
+Argovie,Total,,,,10'684
+Thurgovie,Etrangers,1,15-24 ans,,188
+Thurgovie,Etrangers,2,25-49 ans,,893
+Thurgovie,Etrangers,3,50 ans et plus,,394
+Thurgovie,Etrangers,Total,,,1'475
+Thurgovie,Suisses,1,15-24 ans,,329
+Thurgovie,Suisses,2,25-49 ans,,733
+Thurgovie,Suisses,3,50 ans et plus,,521
+Thurgovie,Suisses,Total,,,1'583
+Thurgovie,Total,,,,3'058
+Tessin,Etrangers,1,15-24 ans,,231
+Tessin,Etrangers,2,25-49 ans,,1'378
+Tessin,Etrangers,3,50 ans et plus,,694
+Tessin,Etrangers,Total,,,2'303
+Tessin,Suisses,1,15-24 ans,,572
+Tessin,Suisses,2,25-49 ans,,1'472
+Tessin,Suisses,3,50 ans et plus,,855
+Tessin,Suisses,Total,,,2'899
+Tessin,Total,,,,5'202
+Vaud,Etrangers,1,15-24 ans,,625
+Vaud,Etrangers,2,25-49 ans,,5'987
+Vaud,Etrangers,3,50 ans et plus,,1'652
+Vaud,Etrangers,Total,,,8'264
+Vaud,Suisses,1,15-24 ans,,1'279
+Vaud,Suisses,2,25-49 ans,,5'203
+Vaud,Suisses,3,50 ans et plus,,2'409
+Vaud,Suisses,Total,,,8'891
+Vaud,Total,,,,17'155
+Valais,Etrangers,1,15-24 ans,,287
+Valais,Etrangers,2,25-49 ans,,1'352
+Valais,Etrangers,3,50 ans et plus,,487
+Valais,Etrangers,Total,,,2'126
+Valais,Suisses,1,15-24 ans,,459
+Valais,Suisses,2,25-49 ans,,1'448
+Valais,Suisses,3,50 ans et plus,,783
+Valais,Suisses,Total,,,2'690
+Valais,Total,,,,4'816
+Neuchâtel,Etrangers,1,15-24 ans,,216
+Neuchâtel,Etrangers,2,25-49 ans,,1'353
+Neuchâtel,Etrangers,3,50 ans et plus,,401
+Neuchâtel,Etrangers,Total,,,1'970
+Neuchâtel,Suisses,1,15-24 ans,,510
+Neuchâtel,Suisses,2,25-49 ans,,1'476
+Neuchâtel,Suisses,3,50 ans et plus,,782
+Neuchâtel,Suisses,Total,,,2'768
+Neuchâtel,Total,,,,4'738
+Genève,Etrangers,1,15-24 ans,,297
+Genève,Etrangers,2,25-49 ans,,4'561
+Genève,Etrangers,3,50 ans et plus,,1'084
+Genève,Etrangers,Total,,,5'942
+Genève,Suisses,1,15-24 ans,,617
+Genève,Suisses,2,25-49 ans,,4'066
+Genève,Suisses,3,50 ans et plus,,1'609
+Genève,Suisses,Total,,,6'292
+Genève,Total,,,,12'234
+Jura,Etrangers,1,15-24 ans,,46
+Jura,Etrangers,2,25-49 ans,,344
+Jura,Etrangers,3,50 ans et plus,,115
+Jura,Etrangers,Total,,,505
+Jura,Suisses,1,15-24 ans,,220
+Jura,Suisses,2,25-49 ans,,548
+Jura,Suisses,3,50 ans et plus,,346
+Jura,Suisses,Total,,,1'114
+Jura,Total,,,,1'619
+Total,,,,,133'169
