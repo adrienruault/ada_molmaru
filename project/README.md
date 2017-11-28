@@ -76,18 +76,19 @@ Note that the dataset is also provided under the neo4j format. However this is n
 #### Prerequisites
 
 The implementation is quaranteed to run with the following specifications:
-- `jupyter notebook` version:
+- `jupyter notebook` version: 4.3.0
 - `ipywidgets` version: 7.0.0
 - `folium` version: 0.5.0
+- `geopandas`
 
 
 #### Project files
 
-- `main_pipeline.ipynb`: includes the whole pipeline of the project including the preprocessing, the ensity maps and the connection queries.
+- `main_pipeline.ipynb`: includes the whole pipeline of the project including the preprocessing, the density maps and the connection queries.
 - `preprocessing.ipynb`: implements the preprocessing of the datasets. It cleans them and saves them in the `./data/data_clean_csv/` folder.
 - `connection_queries.ipynb`: implements of the connection queries alone. It requires `preprocessing.ipynb` to be run before using it.
 - `density_map.ipynb`: implements the density map alone. It requires `preprocessing.ipynb` to be run before using it.
-
+- `
 
 
 
@@ -100,7 +101,7 @@ Following the milestones described previously the project has taken two differen
 The first direction is the implementation of a density map generator to illustrate the level of offshore activities in the world. One of the reason for these density maps is that they give the ability to compare countries and to quickly identify the behavior of some countries regarding offshore activities. This task is interesting because it offers many ways of presenting the data. Indeed quantifying the level of offshore activities is not a well defined concept and it is thus subject to interpretation.
 
 
-The second direction is the development of a connection query tool in order to obtain 
+The second direction is the development of a connection query tool. This tool allows to retrieve all the items of the database that a company or an individual is connected to. It then creates a network that is displayed on a folium map and whose vertices are the queried item along with its connections. The tool is intended to graphically show 
 
 
-Until now both the **density map** and **connection query** implementations have followed disjoint path. 
+Until now both the **density map** and **connection query** implementations have followed disjoint path but it is intended to unite both implementations in the end in order to create a GUI that is easy to use for non-jupyter notebook users.
