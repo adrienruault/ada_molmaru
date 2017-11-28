@@ -1,13 +1,13 @@
 # Panama Papers : Where does the money come from ?
 
-# Abstract
+## Abstract
 
 The Panama papers released in 2015 is the biggest leak of financial information in history. It came from the Panamanian corporate service company Mossack Fonseca. The leak revealed a substantial amount of illegal activities including fraud and tax evasion. It especially uncovered illegal financial activities carried out by world's biggest wealth holders, politicians and companies.
 
 This project aims to compile the information provided by the Panama papers to show the geographical structure of offshore activities. We intend to do so thanks to an interactive map showing connections between the different entities and officers concerned by the leak. The idea being to make the information shown on the map scalable. As a concrete example, the user could query the structure of the offshore activities concerning a particular officer or intermediary but he/she could also scale up by querying offshore connections about more general entities like countries, tax heavens, continents, etc..
 
 
-# Research questions
+## Research questions
 
 - Which countries were the most involved in the offshore activities unveiled in the leak?
 - What are the relationships between countries and tax heavens? 
@@ -16,7 +16,7 @@ This project aims to compile the information provided by the Panama papers to sh
 
 
 
-# A list of internal milestones
+## A list of internal milestones
 
 1. **Simple queries**: implementation of simple requests on the dataset's items. e.g. return an actor or a group of actors by querying a name or part of a name. The query will be completed by applying filters on the actor type (entity, officer or intermediary) and on the actor's country.
 2. **Map pointers**: Connect the simple queries of items to a GUI interface showing the world map. By querying an item, its country would get pointed on the map. The pointer will be colored according to the item type.
@@ -34,7 +34,7 @@ This project aims to compile the information provided by the Panama papers to sh
 
 
 
-# Data description
+## Data description
 
 ### Note following the Paradise papers leak
 
@@ -71,7 +71,7 @@ Note that the dataset is also provided under the neo4j format. However this is n
 
 
 
-# Run the jupyter notebook implementation
+## Run the jupyter notebook implementation
 
 #### Prerequisites
 
@@ -92,7 +92,7 @@ The implementation is quaranteed to run with the following specifications:
 
 
 
-# Future of the project
+## Future of the project
 
 Following the milestones described previously the project has taken two different paths. 
 
