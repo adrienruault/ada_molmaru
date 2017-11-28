@@ -45,14 +45,14 @@ The format of the datasets have been changed since Milestone 1. Indeed following
 
 ##### New perspectives brought by the Paradise papers leak
 
-Despite this little update of the dataset presentation the release of the Paradise papers offers new perspectives to the present project. Indeed it makes available new fresh data to analyze and thus complete the former dataset. It also brings more interest to our study given that the case is still a hot topic in the news. Then the fact the Paradise papers dataset is formated in the same manner as the previous ones by the ICIJ makes it very easy to embed in our implementation.
+Despite this little update of the dataset presentation the release of the Paradise papers offers new perspectives to the present project. Indeed it makes available new fresh data to analyze and thus complete the former dataset. It also brings more interest to our study given that the case is still a hot topic in the news. Then the fact that the Paradise papers dataset is formated in the same manner as the previous ones makes it very easy to embed in our implementation.
 
-Finally it is important to precise that the Paradise papers dataset available in the ICIJ website does not contain the entire leak. Indeed only documents from the Appleby law office are available. The whole leak is expected to be publicly released in a matter of weeks. For this reason the treatment of this particular dataset with our implementation is not fully guaranteed yet given its instability.
+Finally it is important to precise that the Paradise papers dataset available in the ICIJ website does not contain the entire leak. Indeed only documents from the Appleby law office are available. The whole leak is expected to be publicly released in a matter of weeks. For this reason the treatment of this particular dataset with our implementation is not fully guaranteed yet, given its instability.
 
 
 ### Download the dataset
 
-The datasets for the four leaks is available at https://offshoreleaks.icij.org/pages/database. In order to run our implementation properly please download the datasets from the website as a zip file. Then unzip it in `./data/data_csv/`. Running the `preprocessing.ipynb` notebook will read the data, clean and save them with the `_clean` suffix in the `./data/data_clean_csv/` folder. 
+The datasets for the four leaks is available at https://offshoreleaks.icij.org/pages/database. In order to run our implementation properly please download the datasets from the website as a zip file. Then unzip it in `./data/data_csv/`. Running the `main_pipeline.ipynb` or the `preprocessing.ipynb` notebook will read the data, clean and save them in a way to be readable by our implementation. 
 
 
 ### Framework of the dataset
@@ -71,7 +71,7 @@ Note that all the items of the database
 
 
 
-## Run the jupyter notebook implementation
+## Running the jupyter notebook implementation
 
 #### Prerequisites
 
