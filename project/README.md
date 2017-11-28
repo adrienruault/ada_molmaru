@@ -15,18 +15,8 @@ This project aims to compile the information provided by the Panama papers to sh
 - Is there an evolution in time of the tax heavens activity?
 
 
-# Dataset
 
-The dataset is taken from https://www.occrp.org/en/panamapapers/database and it contains five csv files that are described below: 
-- Entities.csv, Officers.csv, Intermediaries.csv are dedicated to the three types of actors encountered in the database. Entities refer to asset providers and officers to financial actors (company, private client, ...). Intermediaries refer to actors putting clients and financial service providers in contact.
-- Addresses.csv describe all the addresses contained in the database those addresses are linked to officers.
-- all_edges.csv describe the relationships between the items of the database described before, that are entities, officers, intermediaries and addresses. Four different kinds of relationships are described in this dataset: 'registered address', 'shareholder of', 'beneficiary of' and 'intermediary of'.
-
-Note that the dataset is also provided under the neo4j format.
-
-
-
-# A list of internal milestones up until project milestone 2
+# A list of internal milestones
 
 1. **Simple queries**: implementation of simple requests on the dataset's items. e.g. return an actor or a group of actors by querying a name or part of a name. The query will be completed by applying filters on the actor type (entity, officer or intermediary) and on the actor's country.
 2. **Map pointers**: Connect the simple queries of items to a GUI interface showing the world map. By querying an item, its country would get pointed on the map. The pointer will be colored according to the item type.
@@ -39,4 +29,45 @@ Note that the dataset is also provided under the neo4j format.
  
  
 ![Alt text](./res/gantt_chart.png?raw=true "Gantt chart")
+
+
+
+
+
+# Data description
+
+## Note following the Paradise papers leak
+
+The format of the datasets have been changed since Milestone 1. Indeed following the release of the Paradise Papers leak the International Consortium of Investigative Journalists (ICIJ) have slightly modified the way of presenting their data. Indeed before the Paradise papers leak the data concerning previous leaks was gathered as a single dataset. This dataset used to include the Panama papers, the Offshore leaks and the Bahamas leaks. Recently then the ICIJ has decided to present their data in a slightly different way. The framework in which it is stored is roughly the same which allows our implementations to keep working. However their strategy is to display the data by leak rather than as a single whole block. This involves slight changes in the preprocessing of the data but nothing dramatic.
+
+Despite this little update of the dataset the release of the Paradise papers offers new perspectives to the present project. 
+
+
+Paradise paper Appleby leaks 
+
+
+## Download the dataset
+
+The datasets for the four leaks     https://offshoreleaks.icij.org/pages/database
+The dataset is taken from https://www.occrp.org/en/panamapapers/database and it contains five csv files that are described below: 
+
+
+## Framework of the dataset
+
+- Entities.csv, Officers.csv, Intermediaries.csv are dedicated to the three types of actors encountered in the database. Entities refer to asset providers and officers to financial actors (company, private client, ...). Intermediaries refer to actors putting clients and financial service providers in contact.
+- Addresses.csv describe all the addresses contained in the database those addresses are linked to officers.
+- all_edges.csv describe the relationships between the items of the database described before, that are entities, officers, intermediaries and addresses. Four different kinds of relationships are described in this dataset: 'registered address', 'shareholder of', 'beneficiary of' and 'intermediary of'.
+
+Note that the dataset is also provided under the neo4j format.
+
+
+
+
+
+
+
+
+
+
+
 
