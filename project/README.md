@@ -38,12 +38,12 @@ This project aims to compile the information provided by the Panama papers to sh
 
 ## Note following the Paradise papers leak
 
-### Changes in the dataset formatting
+##### Changes in the dataset formatting
 
 The format of the datasets have been changed since Milestone 1. Indeed following the release of the Paradise Papers leak the International Consortium of Investigative Journalists (ICIJ) have slightly modified the way of presenting their data. Indeed before the Paradise papers leak the data concerning previous leaks was gathered as a single dataset. This dataset used to include the Panama papers, the Offshore leaks and the Bahamas leaks. Recently then the ICIJ has decided to present their data in a slightly different way. The framework in which it is stored is roughly the same which allows our implementations to keep working. However their strategy is to display the data by leak rather than as a single whole block. This involves slight changes in the preprocessing of the data but nothing dramatic.
 
 
-### New perspectives brought by Paradise papers
+##### New perspectives brought by the Paradise papers leak
 
 Despite this little update of the dataset presentation the release of the Paradise papers offers new perspectives to the present project. Indeed it makes available new fresh data to analyze and thus complete the former dataset. It also brings more interest to our study given that the case is still a hot topic in the news. Then the fact the Paradise papers dataset is formated in the same manner as the previous ones by the ICIJ makes it very easy to embed in our implementation.
 
@@ -58,9 +58,9 @@ The dataset is taken from https://www.occrp.org/en/panamapapers/database and it 
 
 ## Framework of the dataset
 
-- Entities.csv, Officers.csv, Intermediaries.csv are dedicated to the three types of actors encountered in the database. Entities refer to asset providers and officers to financial actors (company, private client, ...). Intermediaries refer to actors putting clients and financial service providers in contact.
-- Addresses.csv describe all the addresses contained in the database those addresses are linked to officers.
-- all_edges.csv describe the relationships between the items of the database described before, that are entities, officers, intermediaries and addresses. Four different kinds of relationships are described in this dataset: 'registered address', 'shareholder of', 'beneficiary of' and 'intermediary of'.
+- **Entities.csv**, **Officers.csv**, **Intermediaries.csv** are dedicated to the three types of actors encountered in the database. Entities refer to asset providers and officers to financial actors (company, private client, ...). Intermediaries refer to actors putting clients and financial service providers in contact.
+- **Addresses.csv** describe all the addresses contained in the database those addresses are linked to officers.
+- **all_edges.csv** describe the relationships between the items of the database described before, that are entities, officers, intermediaries and addresses. Four different kinds of relationships are described in this dataset: 'registered address', 'shareholder of', 'beneficiary of' and 'intermediary of'.
 
 Note that the dataset is also provided under the neo4j format.
 
