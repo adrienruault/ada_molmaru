@@ -36,7 +36,7 @@ This project aims to compile the information provided by the Panama papers to sh
 
 # Data description
 
-## Note following the Paradise papers leak
+### Note following the Paradise papers leak
 
 ##### Changes in the dataset formatting
 
@@ -47,22 +47,23 @@ The format of the datasets have been changed since Milestone 1. Indeed following
 
 Despite this little update of the dataset presentation the release of the Paradise papers offers new perspectives to the present project. Indeed it makes available new fresh data to analyze and thus complete the former dataset. It also brings more interest to our study given that the case is still a hot topic in the news. Then the fact the Paradise papers dataset is formated in the same manner as the previous ones by the ICIJ makes it very easy to embed in our implementation.
 
-Finally it is important to precise that the Paradise papers dataset available in the ICIJ website does not contain the entire leak. Indeed only documents from the Appleby law office are available. The whole leak is expected to be publicly released in a matter of weeks.
+Finally it is important to precise that the Paradise papers dataset available in the ICIJ website does not contain the entire leak. Indeed only documents from the Appleby law office are available. The whole leak is expected to be publicly released in a matter of weeks. For this reason the treatment of this particular dataset with our implementation is not fully guaranteed yet given its instability.
 
 
-## Download the dataset
+### Download the dataset
 
-The datasets for the four leaks     https://offshoreleaks.icij.org/pages/database
-The dataset is taken from https://www.occrp.org/en/panamapapers/database and it contains five csv files that are described below: 
+The datasets for the four leaks is available at https://offshoreleaks.icij.org/pages/database. In order to run our implementation properly please download the datasets from the website as a zip file. Then unzip it in `./data/data_csv/`. Running the `preprocessing.ipynb` notebook will read the data, clean and save them with the `_clean` suffix in the `./data/data_clean_csv/` folder. 
 
 
-## Framework of the dataset
+### Framework of the dataset
+
+The four datasets corresponding to each of the leaks described previously are organized in the same way and they all contain the same files. Those files are described below:
 
 - **Entities.csv**, **Officers.csv**, **Intermediaries.csv** are dedicated to the three types of actors encountered in the database. Entities refer to asset providers and officers to financial actors (company, private client, ...). Intermediaries refer to actors putting clients and financial service providers in contact.
 - **Addresses.csv** describe all the addresses contained in the database those addresses are linked to officers.
 - **all_edges.csv** describe the relationships between the items of the database described before, that are entities, officers, intermediaries and addresses. Four different kinds of relationships are described in this dataset: 'registered address', 'shareholder of', 'beneficiary of' and 'intermediary of'.
 
-Note that the dataset is also provided under the neo4j format.
+Note that the dataset is also provided under the neo4j format. However this is not planned to be used in the frame of this project.
 
 
 
@@ -70,8 +71,36 @@ Note that the dataset is also provided under the neo4j format.
 
 
 
+# Run the jupyter notebook implementation
+
+#### Prerequisites
+
+The implementation is quaranteed to run with the following specifications:
+- `jupyter notebook` version:
+- `ipywidgets` version: 7.0.0
+- `folium` version: 0.5.0
+
+
+#### Project files
+
+- `main_pipeline.ipynb`: includes the whole pipeline of the project including the preprocessing, the ensity maps and the connection queries.
+- `preprocessing.ipynb`: implements the preprocessing of the datasets. It cleans them and saves them in the `./data/data_clean_csv/` folder.
+- `connection_queries.ipynb`: implements of the connection queries alone. It requires `preprocessing.ipynb` to be run before using it.
+- `density_map.ipynb`: implements the density map alone. It requires `preprocessing.ipynb` to be run before using it.
 
 
 
 
 
+# Future of the project
+
+Following the milestones described previously the project has taken two different paths. 
+
+
+The first direction is the implementation of a density map generator to illustrate the level of offshore activities in the world. One of the reason for these density maps is that they give the ability to compare countries and to quickly identify the behavior of some countries regarding offshore activities. This task is interesting because it offers many ways of presenting the data. Indeed quantifying the level of offshore activities is not a well defined concept and it is thus subject to interpretation.
+
+
+The second direction is the development of a connection query tool in order to obtain 
+
+
+Until now both the **density map** and **connection query** implementations have followed disjoint path. 
