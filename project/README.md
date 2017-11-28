@@ -65,7 +65,6 @@ The four datasets corresponding to each of the leaks described previously are or
 
 The dataset is also provided under the neo4j format. However this is not planned to be used in the frame of this project.
 
-Note that all the items of the database 
 
 
 
