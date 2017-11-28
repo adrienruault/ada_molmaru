@@ -6,9 +6,47 @@ import random
 
 
 
+
+def search_by_name(queried_name, dictionary, df_name, country):
+    df = dictionary[df_name]
+    df_copy = df.copy()
+    if (country != 'All'):
+        df_copy = df_copy[df_copy['countries'].str.contains(country, case = False)]        
+    matched_df_copy = df_copy[df_copy['name'].str.contains(queried_name, case = False)]
+    matched_name_serie = matched_df_copy['name']
+
+    if (matched_name_serie.shape[0] > 100):
+        matched_name_serie = matched_name_serie.iloc[:100]
+        matched_df_copy = matched_df_copy.iloc[:100]
+
+    return matched_df_copy
+
+
+
+
+
+
+
+
+
+
 class Item:
     """
+    List of attributes:
+        - node_id
+        - name
+        - country
+        - type
+        - latitude
+        - longitude
+        (static)
+        - country_coordinates_path
+        - capital_coordinates_df
+        
     type_ should be either Intermediary, Officer, Entity or Address
+    latitude and longitude can be set to -1 for 2 reasons:
+        - The country is found to be -1
+        - The country is not found in the capital_coordinates.csv file
     """
     
     #static attribute containing the coordinates of the different capitals
@@ -26,7 +64,7 @@ class Item:
             self.longitude = -1
         else:
             self._getCountryCoordinates(country)
-        print(self.country, 'latitude: {lat} / longitude: {lon}'.format(lat = self.latitude, lon = self.longitude))
+        #print(self.country, 'latitude: {lat} / longitude: {lon}'.format(lat = self.latitude, lon = self.longitude))
         
     @classmethod
     def fromSingleLineDF(cls, single_line_df, type_):
@@ -90,7 +128,10 @@ class Item:
         # To get coordinates anyway we parse the country name in order to get the first country specified
         if (';' in country):
             country_array = country.split(';')
-            country = country_array[0]
+            if (country_array[0] != 'Not identified'):
+                country = country_array[0]
+            else:
+                country = country_array[1]
         
         if (country not in self.capital_coordinates_df['CountryName'].values):
             print(self.capital_coordinates_df.shape, country, 'not found in capital_coordinates.csv file')
@@ -193,29 +234,33 @@ class ItemNetwork:
         feature_group = folium.map.FeatureGroup()
         
         color_dic = {'central_contour': '#ff0000', 'periph_contour': '#3388ff',\
-                     'Entity': '#02f71a', 'Officer': '#01eef7', 'Intermediary': '#e6f701', 'Address': '#ffffff'}
+                     'Entity': '#11ff00', 'Officer': '#0002c4', 'Intermediary': '#ffff00', 'Address': '#adfdff', \
+                     'beneficiary of': '#6bd600', 'registered address': '#adfdff', 'intermediary of': '#ffb600',
+                     'shareholder of' : '#055600'}
 
+        # The printed node_id list maintain a list of all the node_id that had been printed on the folium map
+        # the node_id of the central_item is first added but it is actually printed at the end
+        # so that it is printed on top of all the other markers
         printed_node_id_list = [self.central_item.node_id]
-        printed_coordinates = [self.central_item.latitude, self.central_item.longitude]
+        printed_coordinates = [(self.central_item.latitude, self.central_item.longitude)]
         
         for relationship_elem in self.relationship_list:
-            item_pair = [(relationship_elem.in_item, relationship_elem.out_item)]
+            item_pair = [relationship_elem.in_item, relationship_elem.out_item]
             
             for item in item_pair:
-                if (item.node_id not in printed_node_id_list) and (item.country != -1) and (item.type != 'Address'):
-                    current_latitude = item.latitude
-                    current_longitude = item.longitude
-                    if (current_latitude, current_longitude) in printed_coordinates:
-                        print('Wooooooola')
-                        radius = 2
-                        coordinates[0] = coordinates[0] + radius * math.sin(2 * math.pi * random.random())
-                        coordinates[1] = coordinates[1] + radius * math.cos(2 * math.pi * random.random())
+                if (item.node_id not in printed_node_id_list) and (item.country != -1):
+                    
+                    if (item.latitude, item.longitude) in printed_coordinates:
+                        radius = 1
+                        angle = 2 * math.pi * random.random()
+                        item.latitude = item.latitude + radius * math.sin(angle)
+                        item.longitude = item.longitude + radius * math.cos(angle)
                     else:
-                        printed_coordinates += [coordinates]
+                        printed_coordinates += [(item.latitude, item.longitude)]
                         
                     feature_group.add_child(
                         folium.features.CircleMarker(
-                            [coordinates[0], coordinates[1]],
+                            [item.latitude, item.longitude],
                             radius=8,
                             color=color_dic['periph_contour'],
                             fill_color=color_dic[item.type],
@@ -224,6 +269,19 @@ class ItemNetwork:
                             fill_opacity=0.6)
                         )
                     printed_node_id_list += [item.node_id]
+            
+            # Plot relationship lines
+            if (item_pair[0].country != -1 and item_pair[1].country != -1):
+                feature_group.add_child(
+                    folium.PolyLine(
+                        [(item_pair[0].latitude, item_pair[0].longitude), (item_pair[1].latitude, item_pair[1].longitude)],
+                        #color=color_dic[relationship_elem.relationship],
+                        color = 'black',
+                        weight=3,
+                        popup=relationship_elem.relationship,
+                        opacity=1)
+                    )
+            
 
         # central_item marker
         feature_group.add_child(
@@ -237,8 +295,19 @@ class ItemNetwork:
                         fill_opacity=0.6)
                     )   
                     
-                  
+        
+        
+        
+        
         folium_map.add_child(feature_group)
+        
+        
+        
+        
+        
+        
+        
+        
         
         return folium_map
         
