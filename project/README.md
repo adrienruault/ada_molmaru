@@ -106,7 +106,9 @@ Following the milestones described previously the project has taken two differen
 ##### Future orientation
 
 The most important remaining tasks of the project are described in the milestones section of the present README.md.
-Moreover until now both the **density map** and **connection query** implementations have followed disjoint paths but it is planned to unite both implementations in the end in order to create a GUI that is easy to use for non-jupyter notebook users. The creation of a dashboard is also planned in order to be able to share the application to everyone, even non-programmers. Indeed we believe that it is with no coding interface that the application could have the greatest impact.
+Moreover until now both the **density map** and **connection query** implementations have followed disjoint paths but it is planned to unite both implementations in the end in order to create a GUI that is easy to use for non-jupyter notebook users. Ideally this GUI would contain a unique map on which most of the queries could be made. 
+
+The creation of a jupyter-dashboard is also planned in order to be able to share the application to everyone, even non-programmers. Indeed we believe that it is with no coding interface that the application could have the greatest impact. 
 
 
 
