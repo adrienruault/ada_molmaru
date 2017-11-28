@@ -79,7 +79,7 @@ The implementation is quaranteed to run with the following specifications:
 - `jupyter notebook` version: 4.3.0
 - `ipywidgets` version: 7.0.0
 - `folium` version: 0.5.0
-- `geopandas` version: 
+- `geopandas`
 
 
 #### Project files
