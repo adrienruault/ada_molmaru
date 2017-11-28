@@ -38,12 +38,16 @@ This project aims to compile the information provided by the Panama papers to sh
 
 ## Note following the Paradise papers leak
 
+### Changes in the dataset formatting
+
 The format of the datasets have been changed since Milestone 1. Indeed following the release of the Paradise Papers leak the International Consortium of Investigative Journalists (ICIJ) have slightly modified the way of presenting their data. Indeed before the Paradise papers leak the data concerning previous leaks was gathered as a single dataset. This dataset used to include the Panama papers, the Offshore leaks and the Bahamas leaks. Recently then the ICIJ has decided to present their data in a slightly different way. The framework in which it is stored is roughly the same which allows our implementations to keep working. However their strategy is to display the data by leak rather than as a single whole block. This involves slight changes in the preprocessing of the data but nothing dramatic.
 
-Despite this little update of the dataset the release of the Paradise papers offers new perspectives to the present project. 
 
+### New perspectives brought by Paradise papers
 
-Paradise paper Appleby leaks 
+Despite this little update of the dataset presentation the release of the Paradise papers offers new perspectives to the present project. Indeed it makes available new fresh data to analyze and thus complete the former dataset. It also brings more interest to our study given that the case is still a hot topic in the news. Then the fact the Paradise papers dataset is formated in the same manner as the previous ones by the ICIJ makes it very easy to embed in our implementation.
+
+Finally it is important to precise that the Paradise papers dataset available in the ICIJ website does not contain the entire leak. Indeed only documents from the Appleby law office are available. The whole leak is expected to be publicly released in a matter of weeks.
 
 
 ## Download the dataset
