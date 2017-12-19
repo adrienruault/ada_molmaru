@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>my plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="71edff2a-2d0c-411a-bdc5-eacab14beb02"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"824371fc-44bf-42ff-97b1-687f5b8e2f6b":{"roots":{"references":[{"attributes":{"data_source":{"id":"c9e85078-8f89-435f-b568-8eef29139773","type":"ColumnDataSource"},"glyph":{"id":"d3a2bff3-2a9d-4045-9e83-44e1c2d87c65","type":"Line"},"hover_glyph":null,"muted_glyph":null},"id":"80568200-df7c-42e1-a8dc-fcdd4d1ffbb8","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"462d8ccd-224a-4656-b3eb-92a5c4feb880","type":"Range1d"},{"attributes":{"data_source":{"id":"d0fc1cd8-b933-47a8-a7c3-534f874257dd","type":"ColumnDataSource"},"glyph":{"id":"3112179c-a84e-4cdb-aabc-14997c16a88d","type":"Circle"},"hover_glyph":null,"muted_glyph":null},"id":"bda89bd7-0d2b-499b-8fb3-267ff0fa9513","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#adfdff"},"line_color":{"value":"#3388ff"},"size":{"units":"screen","value":10},"x":{"field":"lon"},"y":{"field":"lat"}},"id":"3112179c-a84e-4cdb-aabc-14997c16a88d","type":"Circle"},{"attributes":{"callback":null},"id":"72ec2d60-159f-4f25-bbf4-e39ddcb08fa6","type":"Range1d"},{"attributes":{"zoom":1},"id":"f75ec98e-ac45-4318-b8f7-df1cb04d9655","type":"GMapOptions"},{"attributes":{"api_key":"AIzaSyBWiP1vrOwawG0gqvWPlMz8CAbom7adjJ4","map_options":{"id":"f75ec98e-ac45-4318-b8f7-df1cb04d9655","type":"GMapOptions"},"plot_height":400,"plot_width":666,"renderers":[{"id":"d868f49f-c498-4fab-a620-87a60ac07988","type":"GlyphRenderer"},{"id":"80568200-df7c-42e1-a8dc-fcdd4d1ffbb8","type":"GlyphRenderer"},{"id":"bda89bd7-0d2b-499b-8fb3-267ff0fa9513","type":"GlyphRenderer"},{"id":"1bfc76b8-5d6b-4721-abd8-156a963b2bbc","type":"GlyphRenderer"},{"id":"45476df7-2b2b-4763-ba0a-dbe4750cc531","type":"GlyphRenderer"},{"id":"3989010f-9380-4eca-8016-dd865fdab4ff","type":"BoxAnnotation"}],"title":{"id":"791ce0ee-df49-4357-bfe4-04135dd5df44","type":"Title"},"tool_events":{"id":"d8191794-d4a9-4181-91a6-57950fc59efe","type":"ToolEvents"},"toolbar":{"id":"fe27a061-befe-4d1b-bb78-b94a26f18446","type":"Toolbar"},"x_range":{"id":"72ec2d60-159f-4f25-bbf4-e39ddcb08fa6","type":"Range1d"},"y_range":{"id":"462d8ccd-224a-4656-b3eb-92a5c4feb880","type":"Range1d"}},"id":"66eb04a2-64be-4cf8-81d4-fa3eb9f197b2","type":"GMapPlot"},{"attributes":{"callback":null,"column_names":["lat","lon","Type","Name","Country"],"data":{"Country":["France"],"Name":["1, Bis Rue Colbert 30000 N\u00eemes FRANCE"],"Type":["Address"],"lat":[49.41822167735158],"lon":[3.167471519806591]}},"id":"d0fc1cd8-b933-47a8-a7c3-534f874257dd","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"abda5e27-3b7d-4e15-99d1-4f2f936de7b5","type":"PanTool"},{"id":"27b0b22d-734d-492d-ad6f-5280758b1d6c","type":"WheelZoomTool"},{"id":"f132adb9-33ab-410d-833e-ea9f4f0fbc43","type":"BoxSelectTool"},{"id":"22564c92-8972-4c23-88a7-58faa7073d02","type":"HoverTool"}]},"id":"fe27a061-befe-4d1b-bb78-b94a26f18446","type":"Toolbar"},{"attributes":{"callback":null,"overlay":{"id":"3989010f-9380-4eca-8016-dd865fdab4ff","type":"BoxAnnotation"},"plot":{"id":"66eb04a2-64be-4cf8-81d4-fa3eb9f197b2","type":"GMapPlot"}},"id":"f132adb9-33ab-410d-833e-ea9f4f0fbc43","type":"BoxSelectTool"},{"attributes":{"callback":null,"plot":{"id":"66eb04a2-64be-4cf8-81d4-fa3eb9f197b2","type":"GMapPlot"},"point_policy":"follow_mouse","tooltips":[["Name","@Name"],["Type","@Type"],["Country","@Country"]]},"id":"22564c92-8972-4c23-88a7-58faa7073d02","type":"HoverTool"},{"attributes":{"plot":null,"text":"Connections from Jacques GRANGER MOLLARD"},"id":"791ce0ee-df49-4357-bfe4-04135dd5df44","type":"Title"},{"attributes":{"line_alpha":{"value":0.6},"line_color":{"value":"#f46d43"},"line_width":{"value":4},"x":{"field":"x"},"y":{"field":"y"}},"id":"c3baefb1-777b-419e-88e6-d67c51bc603c","type":"Line"},{"attributes":{"callback":null,"column_names":["lat","lon","Type","Name","Country"],"data":{"Country":["Switzerland"],"Name":["PACIFIC MARITIME INTERNATIONAL LTD."],"Type":["Entity"],"lat":[46.9166666667],"lon":[7.466667]}},"id":"e3dcc87d-5793-48fe-a277-8339be7c7cc3","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"66eb04a2-64be-4cf8-81d4-fa3eb9f197b2","type":"GMapPlot"}},"id":"abda5e27-3b7d-4e15-99d1-4f2f936de7b5","type":"PanTool"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#11ff00"},"line_color":{"value":"#3388ff"},"size":{"units":"screen","value":10},"x":{"field":"lon"},"y":{"field":"lat"}},"id":"9627f939-91c7-494c-90e6-142cdc231b5d","type":"Circle"},{"attributes":{"line_alpha":{"value":0.6},"line_color":{"value":"#f46d43"},"line_width":{"value":4},"x":{"field":"x"},"y":{"field":"y"}},"id":"d3a2bff3-2a9d-4045-9e83-44e1c2d87c65","type":"Line"},{"attributes":{"plot":{"id":"66eb04a2-64be-4cf8-81d4-fa3eb9f197b2","type":"GMapPlot"}},"id":"27b0b22d-734d-492d-ad6f-5280758b1d6c","type":"WheelZoomTool"},{"attributes":{"callback":null,"column_names":["x","y","Type","Name","Country"],"data":{"Country":["--","--"],"Name":["Relationship","Relationship"],"Type":["registered_address","registered_address"],"x":[2.333333,3.167471519806591],"y":[48.8666666667,49.41822167735158]}},"id":"7cac17d9-efe2-468b-8f92-9bdbc6c6d593","type":"ColumnDataSource"},{"attributes":{},"id":"d8191794-d4a9-4181-91a6-57950fc59efe","type":"ToolEvents"},{"attributes":{"callback":null,"column_names":["x","y","Type","Name","Country"],"data":{"Country":["--","--"],"Name":["Relationship","Relationship"],"Type":["officer_of","officer_of"],"x":[2.333333,7.466667],"y":[48.8666666667,46.9166666667]}},"id":"c9e85078-8f89-435f-b568-8eef29139773","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"6fada31a-d706-4ce5-b924-7f97ca1b9186","type":"ColumnDataSource"},"glyph":{"id":"190917cc-a3da-4364-a2af-7f9ce780f95a","type":"Circle"},"hover_glyph":null,"muted_glyph":null},"id":"45476df7-2b2b-4763-ba0a-dbe4750cc531","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#0002c4"},"line_color":{"value":"#ff0000"},"size":{"units":"screen","value":12},"x":{"field":"lon"},"y":{"field":"lat"}},"id":"190917cc-a3da-4364-a2af-7f9ce780f95a","type":"Circle"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"3989010f-9380-4eca-8016-dd865fdab4ff","type":"BoxAnnotation"},{"attributes":{"callback":null,"column_names":["lat","lon","Type","Name","Country"],"data":{"Country":["France"],"Name":["Jacques GRANGER MOLLARD"],"Type":["Officer"],"lat":[48.8666666667],"lon":[2.333333]}},"id":"6fada31a-d706-4ce5-b924-7f97ca1b9186","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"e3dcc87d-5793-48fe-a277-8339be7c7cc3","type":"ColumnDataSource"},"glyph":{"id":"9627f939-91c7-494c-90e6-142cdc231b5d","type":"Circle"},"hover_glyph":null,"muted_glyph":null},"id":"d868f49f-c498-4fab-a620-87a60ac07988","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"7cac17d9-efe2-468b-8f92-9bdbc6c6d593","type":"ColumnDataSource"},"glyph":{"id":"c3baefb1-777b-419e-88e6-d67c51bc603c","type":"Line"},"hover_glyph":null,"muted_glyph":null},"id":"1bfc76b8-5d6b-4721-abd8-156a963b2bbc","type":"GlyphRenderer"}],"root_ids":["66eb04a2-64be-4cf8-81d4-fa3eb9f197b2"]},"title":"Bokeh Application","version":"0.12.5"}};
+              var render_items = [{"docid":"824371fc-44bf-42ff-97b1-687f5b8e2f6b","elementid":"71edff2a-2d0c-411a-bdc5-eacab14beb02","modelid":"66eb04a2-64be-4cf8-81d4-fa3eb9f197b2"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

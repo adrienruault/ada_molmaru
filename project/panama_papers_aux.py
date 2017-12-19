@@ -226,7 +226,79 @@ class ItemNetwork:
             network_df = network_df.append(new_df_line, ignore_index = True)
             
         return network_df
-        
+
+
+    def getBokehMap(self):
+
+        color_dic = {'central_contour': '#ff0000', 'periph_contour': '#3388ff',
+                     'Entity': '#11ff00', 'Officer': '#0002c4', 'Intermediary': '#ffff00', 'Address': '#adfdff',
+                     'beneficiary of': '#6bd600', 'registered address': '#adfdff', 'intermediary of': '#ffb600',
+                     'shareholder of': '#055600'}
+
+        # The printed node_id list maintain a list of all the node_id that had been printed on the folium map
+        # the node_id of the central_item is first added but it is actually printed at the end
+        # so that it is printed on top of all the other markers
+        printed_node_id_list = [self.central_item.node_id]
+        printed_coordinates = [(self.central_item.latitude, self.central_item.longitude)]
+
+        data = dict(
+            lat=[],
+            lon=[],
+            color=[],
+            fill_color=[],
+            item_description=[],
+            type=[],
+            myname=[]
+        )
+
+        edge_dict = dict(
+            lon=[],
+            lat=[]
+        )
+
+        for relationship_elem in self.relationship_list:
+            item_pair = [relationship_elem.in_item, relationship_elem.out_item]
+
+            for item in item_pair:
+                if (item.node_id not in printed_node_id_list) and (item.country != -1):
+
+                    if (item.latitude, item.longitude) in printed_coordinates:
+                        radius = 1
+                        angle = 2 * math.pi * random.random()
+                        item.latitude = item.latitude + radius * math.sin(angle)
+                        item.longitude = item.longitude + radius * math.cos(angle)
+                    else:
+                        printed_coordinates += [(item.latitude, item.longitude)]
+
+
+                    data['lat'].append(item.latitude)
+                    data['lon'].append(item.longitude)
+                    data['color'].append(color_dic['periph_contour'])
+                    data['fill_color'].append(color_dic[item.type])
+                    data['item_description'].append(item.getDescription())
+                    data['type'].append(item.type)
+                    data['myname'].append(item.name)
+
+                    printed_node_id_list += [item.node_id]
+
+            # Plot relationship lines
+            if (item_pair[0].country != -1 and item_pair[1].country != -1):
+
+                edge_dict['lon'].append([item_pair[0].longitude, item_pair[1].longitude])
+                edge_dict['lat'].append([item_pair[0].latitude, item_pair[1].latitude])
+
+        # central_item marker
+        data['lat'].append(self.central_item.latitude)
+        data['lon'].append(self.central_item.longitude)
+        data['color'].append(color_dic['central_contour'])
+        data['fill_color'].append(color_dic[self.central_item.type])
+        data['item_description'].append(self.central_item.getDescription())
+        data['type'].append(self.central_item.type)
+        data['myname'].append(self.central_item.name)
+
+        print(data)
+        print(edge_dict)
+        return (data, edge_dict)
         
         
     def getMap(self):
@@ -300,14 +372,6 @@ class ItemNetwork:
         
         
         folium_map.add_child(feature_group)
-        
-        
-        
-        
-        
-        
-        
-        
         
         return folium_map
         

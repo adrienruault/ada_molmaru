@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>my plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ec4e93e5-455c-4d24-a3c7-3cb1541a8a18"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"51e49df5-3f41-46af-ab41-e9ff66e1db23":{"roots":{"references":[{"attributes":{"callback":null,"column_names":["x","y","Type","Name","Country"],"data":{"Country":["--","--"],"Name":["Relationship","Relationship"],"Type":["intermediary_of","intermediary_of"],"x":[13.4,-79.533333],"y":[52.5166666667,8.9666666667]}},"id":"20346000-0008-4650-b637-3dd25fba4a81","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"e6f8d78f-f4e2-433a-9e06-78594f1e4747","type":"GMapPlot"}},"id":"1554c6c1-6244-4454-bf0a-b600b47f857d","type":"PanTool"},{"attributes":{"callback":null,"overlay":{"id":"78b5cb7c-e249-40da-86f0-a6a806de42a3","type":"BoxAnnotation"},"plot":{"id":"e6f8d78f-f4e2-433a-9e06-78594f1e4747","type":"GMapPlot"}},"id":"a0a4900e-4364-4b3f-b379-7b92b6e341ee","type":"BoxSelectTool"},{"attributes":{"data_source":{"id":"5df2ab55-8a93-45e5-8ae5-70c4f3944395","type":"ColumnDataSource"},"glyph":{"id":"daaf6f41-017f-4f64-bcbe-f97f569c43be","type":"Line"},"hover_glyph":null,"muted_glyph":null},"id":"3c591e9b-85a1-46ca-b038-c02e415078dd","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"a29c47ca-bc5f-47a7-9e68-9f005ca4dd2f","type":"Range1d"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#11ff00"},"line_color":{"value":"#ff0000"},"size":{"units":"screen","value":12},"x":{"field":"lon"},"y":{"field":"lat"}},"id":"a9c32e7b-3897-4445-8a27-912b3d0b7254","type":"Circle"},{"attributes":{"callback":null,"column_names":["lat","lon","Type","Name","Country"],"data":{"Country":["Panama"],"Name":["MARCELLIN INC. PANAMA REPUBLIC OF PANAMA S.I."],"Type":["Address"],"lat":[8.556004937382271],"lon":[-80.44512077359305]}},"id":"ddcf13e3-223a-4ec1-88a4-4a3f1bbf7bb9","type":"ColumnDataSource"},{"attributes":{"callback":null,"column_names":["lat","lon","Type","Name","Country"],"data":{"Country":["Panama"],"Name":["MARCELLIN INC."],"Type":["Entity"],"lat":[8.9666666667],"lon":[-79.533333]}},"id":"0c5ef493-c2d1-4408-90e8-61988e637e4b","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.6},"line_color":{"value":"#f46d43"},"line_width":{"value":4},"x":{"field":"x"},"y":{"field":"y"}},"id":"daaf6f41-017f-4f64-bcbe-f97f569c43be","type":"Line"},{"attributes":{"plot":null,"text":"Connections from MARCELLIN INC."},"id":"f689eca3-cb24-4433-8b03-d51231d52ce1","type":"Title"},{"attributes":{"callback":null,"column_names":["lat","lon","Type","Name","Country"],"data":{"Country":["Germany"],"Name":["UBS PRIVATE BANKING DEUTSCHLAND AG"],"Type":["Intermediary"],"lat":[52.5166666667],"lon":[13.4]}},"id":"c376ecc7-32a6-458e-9eda-a21fd0be7444","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"20346000-0008-4650-b637-3dd25fba4a81","type":"ColumnDataSource"},"glyph":{"id":"ab7abcc9-d7db-41d8-8a5c-6db5a24da0d8","type":"Line"},"hover_glyph":null,"muted_glyph":null},"id":"2a6ab5d7-c8b6-4ee9-ba76-7864e009bf0c","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"ddcf13e3-223a-4ec1-88a4-4a3f1bbf7bb9","type":"ColumnDataSource"},"glyph":{"id":"edcb546b-ccb2-4cce-bf65-c8289f6194f9","type":"Circle"},"hover_glyph":null,"muted_glyph":null},"id":"da0d28e0-d877-4d5a-8068-f3c79fe54e75","type":"GlyphRenderer"},{"attributes":{"callback":null,"plot":{"id":"e6f8d78f-f4e2-433a-9e06-78594f1e4747","type":"GMapPlot"},"point_policy":"follow_mouse","tooltips":[["Name","@Name"],["Type","@Type"],["Country","@Country"]]},"id":"54b39fb3-0e19-4faf-aef7-30a56d4f722d","type":"HoverTool"},{"attributes":{"data_source":{"id":"0c5ef493-c2d1-4408-90e8-61988e637e4b","type":"ColumnDataSource"},"glyph":{"id":"a9c32e7b-3897-4445-8a27-912b3d0b7254","type":"Circle"},"hover_glyph":null,"muted_glyph":null},"id":"e75f08f4-1ceb-475e-b64f-f38538a8e99a","type":"GlyphRenderer"},{"attributes":{"api_key":"AIzaSyBWiP1vrOwawG0gqvWPlMz8CAbom7adjJ4","map_options":{"id":"78a33353-aa6d-4783-8cea-7d0d6c022d3b","type":"GMapOptions"},"plot_height":400,"plot_width":666,"renderers":[{"id":"4b664692-72fb-46bc-95eb-dd94dee8fa05","type":"GlyphRenderer"},{"id":"2a6ab5d7-c8b6-4ee9-ba76-7864e009bf0c","type":"GlyphRenderer"},{"id":"da0d28e0-d877-4d5a-8068-f3c79fe54e75","type":"GlyphRenderer"},{"id":"3c591e9b-85a1-46ca-b038-c02e415078dd","type":"GlyphRenderer"},{"id":"e75f08f4-1ceb-475e-b64f-f38538a8e99a","type":"GlyphRenderer"},{"id":"78b5cb7c-e249-40da-86f0-a6a806de42a3","type":"BoxAnnotation"}],"title":{"id":"f689eca3-cb24-4433-8b03-d51231d52ce1","type":"Title"},"tool_events":{"id":"f5ae1434-6597-4e65-ac70-7343f5fe7b44","type":"ToolEvents"},"toolbar":{"id":"847eedb6-3c94-4a7c-8e21-30613c6f36cf","type":"Toolbar"},"x_range":{"id":"a29c47ca-bc5f-47a7-9e68-9f005ca4dd2f","type":"Range1d"},"y_range":{"id":"c96c1c02-c346-4c4c-8ffb-6ecca4525771","type":"Range1d"}},"id":"e6f8d78f-f4e2-433a-9e06-78594f1e4747","type":"GMapPlot"},{"attributes":{"callback":null},"id":"c96c1c02-c346-4c4c-8ffb-6ecca4525771","type":"Range1d"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"78b5cb7c-e249-40da-86f0-a6a806de42a3","type":"BoxAnnotation"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1554c6c1-6244-4454-bf0a-b600b47f857d","type":"PanTool"},{"id":"194fa273-74dd-436c-a10d-0a66708f5c21","type":"WheelZoomTool"},{"id":"a0a4900e-4364-4b3f-b379-7b92b6e341ee","type":"BoxSelectTool"},{"id":"54b39fb3-0e19-4faf-aef7-30a56d4f722d","type":"HoverTool"}]},"id":"847eedb6-3c94-4a7c-8e21-30613c6f36cf","type":"Toolbar"},{"attributes":{"zoom":1},"id":"78a33353-aa6d-4783-8cea-7d0d6c022d3b","type":"GMapOptions"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#ffff00"},"line_color":{"value":"#3388ff"},"size":{"units":"screen","value":10},"x":{"field":"lon"},"y":{"field":"lat"}},"id":"b865709d-ce29-498a-aaab-c8339543d148","type":"Circle"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#adfdff"},"line_color":{"value":"#3388ff"},"size":{"units":"screen","value":10},"x":{"field":"lon"},"y":{"field":"lat"}},"id":"edcb546b-ccb2-4cce-bf65-c8289f6194f9","type":"Circle"},{"attributes":{"data_source":{"id":"c376ecc7-32a6-458e-9eda-a21fd0be7444","type":"ColumnDataSource"},"glyph":{"id":"b865709d-ce29-498a-aaab-c8339543d148","type":"Circle"},"hover_glyph":null,"muted_glyph":null},"id":"4b664692-72fb-46bc-95eb-dd94dee8fa05","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.6},"line_color":{"value":"#f46d43"},"line_width":{"value":4},"x":{"field":"x"},"y":{"field":"y"}},"id":"ab7abcc9-d7db-41d8-8a5c-6db5a24da0d8","type":"Line"},{"attributes":{"callback":null,"column_names":["x","y","Type","Name","Country"],"data":{"Country":["--","--"],"Name":["Relationship","Relationship"],"Type":["registered_address","registered_address"],"x":[-79.533333,-80.44512077359305],"y":[8.9666666667,8.556004937382271]}},"id":"5df2ab55-8a93-45e5-8ae5-70c4f3944395","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"e6f8d78f-f4e2-433a-9e06-78594f1e4747","type":"GMapPlot"}},"id":"194fa273-74dd-436c-a10d-0a66708f5c21","type":"WheelZoomTool"},{"attributes":{},"id":"f5ae1434-6597-4e65-ac70-7343f5fe7b44","type":"ToolEvents"}],"root_ids":["e6f8d78f-f4e2-433a-9e06-78594f1e4747"]},"title":"Bokeh Application","version":"0.12.5"}};
+              var render_items = [{"docid":"51e49df5-3f41-46af-ab41-e9ff66e1db23","elementid":"ec4e93e5-455c-4d24-a3c7-3cb1541a8a18","modelid":"e6f8d78f-f4e2-433a-9e06-78594f1e4747"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
