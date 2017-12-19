@@ -367,17 +367,7 @@ class ItemNetwork:
                     circle = circle = Circle(x="lon", y="lat", size=10, fill_color=color_dic[item.type],
                                              fill_alpha=0.6, line_color=color_dic['periph_contour'])  
                     fig.add_glyph(source, circle)
-                    
-#                    feature_group.add_child(
-#                        folium.features.CircleMarker(
-#                            [item.latitude, item.longitude],
-#                            radius=8,
-#                            color=color_dic['periph_contour'],
-#                            fill_color=color_dic[item.type],
-#                            fill = True,
-#                            popup = item.getDescription(),
-#                            fill_opacity=0.6)
-#                        )
+
                     printed_node_id_list += [item.node_id]
             
             # Plot relationship lines
@@ -392,23 +382,10 @@ class ItemNetwork:
                                                Country = ['--','--']))
                 line = Line(x="x", y="y", line_width=4, line_color="#f46d43", line_alpha=0.6)
                 fig.add_glyph(source, line)
-                
-                
-                
-#                feature_group.add_child(
-#                    folium.PolyLine(
-#                        [(item_pair[0].latitude, item_pair[0].longitude), (item_pair[1].latitude, item_pair[1].longitude)],
-#                        #color=color_dic[relationship_elem.relationship],
-#                        color = 'black',
-#                        weight=3,
-#                        popup=relationship_elem.relationship,
-#                        opacity=1)
-#                    )
+
             
 
         # central_item marker
-        
-
         source = ColumnDataSource(
             data=dict(
                 lat=[self.central_item.latitude],
@@ -423,25 +400,7 @@ class ItemNetwork:
                         line_color=color_dic['central_contour'])   
         fig.add_glyph(source, circle)
         
-        
-        
-#        feature_group.add_child(
-#                    folium.features.CircleMarker(
-#                        [self.central_item.latitude, self.central_item.longitude],
-#                        radius=8,
-#                        color=color_dic['central_contour'],
-#                        fill_color=color_dic[self.central_item.type],
-#                        fill = True,
-#                        popup = self.central_item.getDescription(),
-#                        fill_opacity=0.6)
-#                    )   
-                    
-        
-        
-        
-        
-#        folium_map.add_child(feature_group)
-        
+        # Add tools
         fig.add_tools(PanTool(), WheelZoomTool(), BoxSelectTool(), HoverTool())
         
         hover = fig.select_one(HoverTool)
@@ -452,8 +411,7 @@ class ItemNetwork:
             ("Country", "@Country")
         ]
         
-        #output_file("gmap_plot.html")
-        
+        #Save map to html
         html = file_html(fig, CDN, "my plot")
         Html_file= open("bokeh_map.html","w")
         Html_file.write(html[17::])
@@ -461,11 +419,7 @@ class ItemNetwork:
         
         show(fig)
         
-        
-        
-        
-        
-        
+
         return fig
         
 
