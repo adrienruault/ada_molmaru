@@ -1,5 +1,13 @@
 # Panama Papers : Where does the money come from ?
 
+
+## Our website
+
+A description of our project along with case studies is presented in our website that you can access [here](https://hadrienmarcellin.github.io/ada_jekyll_page/). Enjoy your trip!
+
+
+
+
 ## Abstract
 
 The Panama papers released in 2015 is the biggest leak of financial information in history. It came from the Panamanian corporate service company Mossack Fonseca. The leak revealed a substantial amount of illegal activities including fraud and tax evasion. It especially uncovered illegal financial activities carried out by world's biggest wealth holders, politicians and companies.
@@ -52,7 +60,7 @@ Finally it is important to precise that the Paradise papers dataset available in
 
 ### Download the dataset
 
-The datasets for the four leaks is available at https://offshoreleaks.icij.org/pages/database. In order to run our implementation properly please download the datasets from the website as a zip file. Then unzip it in `./data/data_csv/`. Running the `main_pipeline.ipynb` or the `preprocessing.ipynb` notebook will read the data, clean and save them in a way to be readable by our implementation. 
+The datasets for the four leaks is available [here](https://offshoreleaks.icij.org/pages/database). In order to run our implementation properly please download the datasets from the website as a zip file. Then unzip it in `./data/data_csv/`. Running the `main_pipeline.ipynb` or the `preprocessing.ipynb` notebook will read the data, clean and save them in a way to be readable by our implementation. 
 
 
 ### Framework of the dataset
@@ -72,6 +80,7 @@ The dataset is also provided under the neo4j format. However this is not planned
 
 ## Running the jupyter notebook implementation
 
+
 #### Prerequisites
 
 The implementation is quaranteed to run with the following specifications:
@@ -79,6 +88,15 @@ The implementation is quaranteed to run with the following specifications:
 - `ipywidgets` version: 7.0.0
 - `folium` version: 0.5.0
 - `geopandas`
+
+#### Very first thing to do
+
+Before running any of the scripts of our github you please do the two following things in the right order:
+
+- Firstly download the different datasets in csv format [here](https://offshoreleaks.icij.org/pages/database). It should be ok to use the dataset of the Paradise papers as it is formatted in the same way as the other dataset but it is not guarantee to fully work.
+
+- Then run the `preprocessing.ipynb` file as it will read the datasets and format them in a way that suits our implementation.
+
 
 
 #### Project files
