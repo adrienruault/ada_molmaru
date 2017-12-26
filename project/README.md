@@ -88,31 +88,31 @@ Download the `Bahamas Leaks`, `Offshore Leaks`, `Panama papers` and `Paradise pa
 
 .
 +-- data
-|  +-- data_csv
-|     +-- bahamas_leaks
-|        +-- bahamas_leaks.edges.csv
-|        +-- bahamas_leaks.nodes.address.csv
-|        +-- bahamas_leaks.nodes.entitiy.csv
-|        +-- bahamas_leaks.nodes.intermediary.csv
-|        +-- bahamas_leaks.nodes.officer.csv
-|     +-- offshore_leaks
-|        +-- offshore_leaks.edges.csv
-|        +-- offshore_leaks.nodes.address.csv
-|        +-- offshore_leaks.nodes.entitiy.csv
-|        +-- offshore_leaks.nodes.intermediary.csv
-|        +-- offshore_leaks.nodes.officer.csv
-|     +-- panama_papers
-|        +-- panama_papers.edges.csv
-|        +-- panama_papers.nodes.address.csv
-|        +-- panama_papers.nodes.entitiy.csv
-|        +-- panama_papers.nodes.intermediary.csv
-|        +-- panama_papers.nodes.officer.csv
-|     +-- paradise_papers
-|        +-- paradise_papers.edges.csv
-|        +-- paradise_papers.nodes.address.csv
-|        +-- paradise_papers.nodes.entitiy.csv
-|        +-- paradise_papers.nodes.intermediary.csv
-|        +-- paradise_papers.nodes.officer.csv
+|   +-- data_csv
+|       +-- bahamas_leaks
+|           +-- bahamas_leaks.edges.csv
+|           +-- bahamas_leaks.nodes.address.csv
+|           +-- bahamas_leaks.nodes.entitiy.csv
+|           +-- bahamas_leaks.nodes.intermediary.csv
+|           +-- bahamas_leaks.nodes.officer.csv
+|       +-- offshore_leaks
+|           +-- offshore_leaks.edges.csv
+|           +-- offshore_leaks.nodes.address.csv
+|           +-- offshore_leaks.nodes.entitiy.csv
+|           +-- offshore_leaks.nodes.intermediary.csv
+|           +-- offshore_leaks.nodes.officer.csv
+|       +-- panama_papers
+|           +-- panama_papers.edges.csv
+|           +-- panama_papers.nodes.address.csv
+|           +-- panama_papers.nodes.entitiy.csv
+|           +-- panama_papers.nodes.intermediary.csv
+|           +-- panama_papers.nodes.officer.csv
+|       +-- paradise_papers
+|           +-- paradise_papers.edges.csv
+|           +-- paradise_papers.nodes.address.csv
+|           +-- paradise_papers.nodes.entitiy.csv
+|           +-- paradise_papers.nodes.intermediary.csv
+|           +-- paradise_papers.nodes.officer.csv
 
 The `preprocessing.ipynb` and `main_pipeline.ipynb` should run well if the data files are organized this way.
 
