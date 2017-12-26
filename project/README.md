@@ -1,5 +1,9 @@
 # Panama Papers : Where does the money come from ?
 
+## Website of the project
+
+A website describing the features of the project is available (here)[https://hadrienmarcellin.github.io/ada_jekyll_page/] along with its github (repository)[https://github.com/HadrienMarcellin/ada_jekyll_page]
+
 ## Abstract
 
 The Panama papers released in 2015 is the biggest leak of financial information in history. It came from the Panamanian corporate service company Mossack Fonseca. The leak revealed a substantial amount of illegal activities including fraud and tax evasion. It especially uncovered illegal financial activities carried out by world's biggest wealth holders, politicians and companies.
