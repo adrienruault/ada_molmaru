@@ -114,8 +114,6 @@ Download the `Bahamas Leaks`, `Offshore Leaks`, `Panama papers` and `Paradise pa
 |           +-- paradise_papers.nodes.entitiy.csv
 |           +-- paradise_papers.nodes.intermediary.csv
 |           +-- paradise_papers.nodes.officer.csv
-
-
 ```
 
 The `preprocessing.ipynb` and `main_pipeline.ipynb` should run well if the data files are organized this way.
