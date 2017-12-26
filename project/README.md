@@ -162,7 +162,7 @@ The creation of a jupyter-dashboard is also planned in order to be able to share
 An implementation of the web app is available in the repository, but for the moment it is not hosted on any public website.
 It is however possible to run it locally installing the python package Bokeh (pip install bokeh) and executing the following command in the actual folder:
 
-bokeh serve --show .
+bokeh serve --show main.py
 
 
 
