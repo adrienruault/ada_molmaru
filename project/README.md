@@ -2,7 +2,7 @@
 
 ## Website of the project
 
-A website describing the features of the project is available (here)[https://hadrienmarcellin.github.io/ada_jekyll_page/] along with its github (repository)[https://github.com/HadrienMarcellin/ada_jekyll_page]
+A website describing the features of the project is available [here](https://hadrienmarcellin.github.io/ada_jekyll_page/) along with its github [repository](https://github.com/HadrienMarcellin/ada_jekyll_page)
 
 ## Abstract
 
